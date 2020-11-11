@@ -105,8 +105,8 @@ class Snake(object):
 
                 # Baixo
                 elif keys[pygame.K_DOWN]:
-                    self.dirnx = 0  # garante o movimento apenas na vertical
-                    self.dirny = 1  # movimenta um quadro para baixo
+                    self.dirnx = 0
+                    self.dirny = 1
                     self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
 
         for i, c in enumerate(self.body):
